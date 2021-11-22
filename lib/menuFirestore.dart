@@ -60,7 +60,7 @@ class _MenuFirestoreState extends State<MenuFirestore> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ContainerOldMessages(),
-          BotoesCustom("Visualizar eventos", onPressed: _buscaRegistro ),
+          // BotoesCustom("Visualizar eventos", onPressed: _buscaRegistro ),
         ],
       ),
     );
@@ -73,10 +73,10 @@ class _MenuFirestoreState extends State<MenuFirestore> {
   }
 
   ContainerOldMessages() {
-    _buscaRegistro;
+    _buscaRegistro();
     return Container(
       color: Colors.transparent,
-      height: 270,
+      height: 600,
       width: double.maxFinite,
       margin: EdgeInsets.only(left: 3, right: 3, bottom: 0, top: 0),
       child: ListView.builder(
